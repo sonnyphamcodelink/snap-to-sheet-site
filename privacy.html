@@ -4,7 +4,7 @@
 <body><main>
 <nav><a href="./">Home</a><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a></nav>
 <h1>Privacy Policy</h1>
-<p class="meta">Snap-to-Sheet · Effective November 19, 2026</p>
+<p class="meta">Snap-to-Sheet · Effective November 26, 2026</p>
 <h2>Summary</h2>
 <p>To read a document, Snap-to-Sheet sends the photos you choose to our processing service and to Google Gemini. Our service does not store your photos or the values read from them. Your rows are saved only to the Excel file or Google Sheet you choose, and only after you approve them. There are no ads, no analytics and no tracking.</p>
 <h2>What is sent when you scan</h2>
@@ -12,6 +12,8 @@
 <p>The app never sends your Excel file, its name or its contents, and never sends your Google sign-in tokens or Google account details to our service.</p>
 <h2>Device ID and scan counts</h2>
 <p>To count free scans and prevent abuse, the app creates a random device ID, stored in your iPhone's Keychain, and verifies the app with Apple's App Attest. Our service stores this device ID, the App Attest public key and the number of scans used each month. The device ID is not linked to your name, email address or Google account, and is not used for advertising or tracking.</p>
+<h2>If App Attest isn't available</h2>
+<p>If Apple's App Attest can't verify the app on your iPhone, our service still allows a few scans a day. The app sends your device ID and a short error code (for example, a DeviceCheck error number or "timeout"), which our service logs so we can fix the problem. To limit these scans, our service stores a daily scan count under a keyed, one-way code made from your IP address, never the address itself. Scans across all such devices are also capped each day.</p>
 <h2>Subscriptions</h2>
 <p>Purchases are handled by Apple. The app never sees your payment details. If you subscribe, the app sends Apple's signed transaction to our service, which checks it with Apple and stores the original transaction ID, the plan, whether it is active, its renewal date, and the number of scans used each month. These records contain no document content, Google identifiers, name or email address.</p>
 <h2>Google Sheets</h2>
@@ -22,9 +24,9 @@
 <h2>Data stored on your device</h2>
 <p>Photos and draft rows are held in memory while you review them and are not saved to Photos or app files. The app stores your list of recent files, the number of rows it added to each, your Google account details and your preferences on your iPhone. Signing out of a Google account removes that account's data from your iPhone. Deleting the app removes the rest, except items in the iPhone's Keychain: the device ID and any Google sign-in tokens can remain until the iPhone is erased. Sign out before deleting the app to remove the tokens.</p>
 <h2>Service providers</h2>
-<p>Our processing service runs on Cloudflare, which may keep request metadata such as time, path and status under its own policies. It does not keep request contents. Google Gemini processes the photos and column names under the <a href="https://ai.google.dev/gemini-api/terms">Gemini API Additional Terms of Service</a>; Google keeps limited logs for abuse monitoring and legal obligations. Our service logs only the path, status, timing, model name and token counts of each request, never photos, extracted values, tokens, device IDs or transaction IDs.</p>
+<p>Our processing service runs on Cloudflare, which may keep request metadata such as time, path and status under its own policies. It does not keep request contents. Google Gemini processes the photos and column names under the <a href="https://ai.google.dev/gemini-api/terms">Gemini API Additional Terms of Service</a>; Google keeps limited logs for abuse monitoring and legal obligations. Our service logs only the path, status, timing, model name and token counts of each request, plus the App Attest error code described above, never photos, extracted values, tokens, device IDs, IP addresses or transaction IDs.</p>
 <h2>Retention and deletion</h2>
-<p>Scan counts older than the previous month are deleted automatically on your next scan. To ask us to delete the device ID or subscription records held by our service, <a href="https://github.com/sonnyphamcodelink/snap-to-sheet-site/issues">open an issue on GitHub</a> without posting any personal details publicly, and we will arrange a private way to confirm the request. Rows you saved to your own files are yours to keep or delete.</p>
+<p>Scan counts older than the previous month are deleted automatically on your next scan. Daily counts kept when App Attest isn't available are deleted the same way once they are older than the previous day. To ask us to delete the device ID or subscription records held by our service, <a href="https://github.com/sonnyphamcodelink/snap-to-sheet-site/issues">open an issue on GitHub</a> without posting any personal details publicly, and we will arrange a private way to confirm the request. Rows you saved to your own files are yours to keep or delete.</p>
 <h2>No accounts, ads or tracking</h2>
 <p>Snap-to-Sheet has no account of its own, no advertising, and no analytics or crash-reporting SDKs. It does not track you across apps or websites and does not sell or share personal data.</p>
 <h2>Children</h2>
